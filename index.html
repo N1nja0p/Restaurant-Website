@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ############META TAGS########## -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This Website Is Created By Abhimanyu Sharma. This Website Is In Beta So You May Find Bugs. You Can DM The Bugs To My Instagram">
+    <meta name="author" name="Abhimanyu Sharma">
+    <!-- ########TITLE######### -->
+    <title>Restaurant Website</title>
+    <!-- ###########STYLESHEETS######### -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- ########SCRIPTS######## -->
+    <script type="text/javascript">
+        alert ("The Website You Are Viewing Is Created By Abhimanyu Sharma. This Website Is In Beta So You May Find Bugs. You Can DM The Bugs To My Instagram. Press OK To Continue");    
+    </script>
+    <!-- ############SMOOTH SCROLLING USING JAVASCRIPT####### -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault()
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 650, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+    <!-- ####FORM SUBMITTED WARNING###### -->
+    <script type="text/javascript">
+        function myFunction(){
+            alert("The Form Has Been Submitted !")
+        }
+    </script>
+</head>
+<body>
+    <!-- ############NAVBAR############## -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#showcase">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">FW</h1>
+
+        </div>
+    </nav>
+    <!-- ###################SHOWCASE AREA################  -->
+    <section class="showcase-area"id="showcase">
+        <div class="showcase-container">
+        <h1 class="main-title">Eat Right Food</h1>
+        <p>Eat Healthy Food, It Is Good For Your Health.</p>
+        <a href="#food-menu"class="btn btn-primary">Menu</a>
+    </div>
+    </section>
+    <!-- ################ABOUT US########### -->
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've Been Making Healthy Food For Last 10 Years</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni suscipit commodi perferendis, animi deleniti provident maiores, ipsa quasi voluptatem esse ratione perspiciatis exercitationem ullam eum. Obcaecati, magnam minima fuga commodi labore rerum accusantium architecto sequi doloribus hic molestiae repellat? Ea.</p>
+            </div>
+            <div class="about-image">
+                <img src="./img/about-photo.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+    <!-- #################FOOD CATEGORY################ -->
+    <section id="food">
+        <h2>Types Of Food</h2>
+        <div class="food-container container">
+            <div class="food-type fruit">
+                <div class="img-container">
+                    <img src="./img/food1.jpg" alt="Fresh Fruit Image">
+                    <div class="img-content">
+                        <h3>Fruit</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit"class="btn btn-primary"target="_blank">Learn More</a>
+                    </div>
+                </div>
+                </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="./img/food2.jpg" alt="Fresh Vegetable Image">
+                    <div class="img-content">
+                        <h3>Vegetable</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable"class="btn btn-primary"target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grain">
+                <div class="img-container">
+                    <img src="./img/food3.jpg" alt="Fresh Grain Image">
+                    <div class="img-content">
+                        <h3>Grain</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain"class="btn btn-primary"target="_blank">Learn More</a>
+                    </div>
+                </div>
+</div>
+</div>
+    </section>
+    <!-- #############FOOD MENU########### -->
+    <section id="food-menu">
+        <h2 class="food-menu-heading">FOOD MENU
+        </h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu1.jpg" alt="Food Menu Item 1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu2.jpg" alt="Food Menu Item 2">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;299</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu3.jpg" alt="Food Menu Item 3">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;270</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu4.jpg" alt="Food Menu Item 4">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;300</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu5.jpg" alt="Food Menu Item 5">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;280</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image">
+                    <img src="./img/food-menu6.jpg" alt="Food Menu Item 6">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, suscipit.</p>
+                    <p class="food-price">Price: &#8377;450</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #################TESTIMONIAL############## -->
+<section id="testimonial">
+    <h2 class="testimonial-title">What Our Customers Say</h2>
+    <div class="testimonial-container container">
+        <div class="testimonial-box">
+            <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimaonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ex earum quo nam sed maiores.</p>
+            <div class="customer-detail">
+                <div class="customer-photo">
+                    <img src="./img/male-photo1.jpg" alt="John Doe's Photo">
+                </div>
+                <p class="customer-name">John Doe</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimaonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ex earum quo nam sed maiores.</p>
+            <div class="customer-detail">
+                <div class="customer-photo">
+                    <img src="./img/male-photo2.jpg" alt="Jay Doe's Photo">
+                </div>
+                <p class="customer-name">Jay Doe</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimaonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ex earum quo nam sed maiores.</p>
+            <div class="customer-detail">
+                <div class="customer-photo">
+                    <img src="./img/male-photo3.jpg" alt="Jolly Doe's Photo">
+                </div>
+                <p class="customer-name">Jolly Doe</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ################CONTACT PAGE############# -->
+<section id="contact">
+    <div class="contact-container container">
+        <div class="contact-image">
+            <img src="./img/restraunt-image.jpg" alt="Restaurant's Image">
+        </div>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="">
+            <input type="text" name="" id=""title="Please Enter Your Name"placeholder="Please Enter Your Name"required>
+            <input type="email" name="" id=""title="Please Enter You E-Mail"placeholder="Please Enter Your E-Mail"required>
+            <textarea name="" id="" cols="30" rows="10"title="Please Leave A Lovely Message"placeholder="Please Leave A Lovely Message"required></textarea>
+           <button type="submit"class="form-btn">SUBMIT</button>
+        </form>
+        </div>
+    </div>
+</section>
+<!-- #################FOOTER################### -->
+<footer class="footer">
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/profile.php?id=100018318225045" target="_blank" class="facebook"><i class="fab fa-facebook fa-5x"></i></a>
+    <a href="https://twitter.com/Abhiman78795935"target="_blank" class="twitter"><i class="fab fa-twitter fa-5x"></i></a>
+       <a href="https://www.instagram.com/ig_n1nja0p_/" target="_blank"class="instagram"><i class="fab fa-instagram fa-5x"></i></a>
+    </div>
+    <p class="footer-text">Abhimanyu Corporation &copy; 2020, All Rights Reserved</p>
+</footer>
+</body>
+</html>
